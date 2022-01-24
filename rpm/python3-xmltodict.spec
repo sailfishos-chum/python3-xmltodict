@@ -7,7 +7,6 @@ Name:       python3-xmltodict
 
 # >> macros
 # << macros
-%define int_name xmltodict
 
 Summary:    Makes working with XML feel like you are working with JSON
 Version:    0.12.0
@@ -15,8 +14,8 @@ Release:    0
 Group:      Applications
 License:    Apache-2.0
 BuildArch:  noarch
-URL:        https://pypi.org/project/argcomplete/
-Source0:    https://files.pythonhosted.org/packages/x/%{int_name}/%{int_name}-%{version}.tar.gz
+URL:        https://pypi.org/project/xmltodict/
+Source0:    %{name}-%{version}.tar.gz
 Source100:  python3-xmltodict.yaml
 BuildRequires:  pkgconfig(python)
 BuildRequires:  python3-rpm-macros
@@ -27,19 +26,19 @@ xmltodict is a Python module that makes working with XML feel like you are
 working with JSON
 
 %if "%{?vendor}" == "chum"
-PackageName: argcomplete
+PackageName: xmltodict
 Type: console-application
 Categories:
  - Library
 Custom:
   PackagingRepo: https://github.com/sailfishos-chum/python3-xmltodict
 Url:
-  Homepage: https://pypi.org/project/argcomplete/
+  Homepage: https://pypi.org/project/xmltodict/
 %endif
 
 
 %prep
-%setup -q -n %{int_name}-%{version}
+%setup -q -n %{name}-%{version}/upstream
 
 # >> setup
 # << setup
