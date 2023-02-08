@@ -12,7 +12,7 @@ Summary:    Makes working with XML feel like you are working with JSON
 Version:    0.13.0
 Release:    0
 Group:      Applications
-License:    Apache-2.0
+License:    MIT
 BuildArch:  noarch
 URL:        https://pypi.org/project/xmltodict/
 Source0:    %{name}-%{version}.tar.gz
@@ -32,6 +32,7 @@ Categories:
  - Library
 Custom:
   PackagingRepo: https://github.com/sailfishos-chum/python3-xmltodict
+  Repo: https://github.com/martinblech/xmltodict
 Url:
   Homepage: https://pypi.org/project/xmltodict/
 %endif
