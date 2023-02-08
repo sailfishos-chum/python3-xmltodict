@@ -9,7 +9,7 @@ Name:       python3-xmltodict
 # << macros
 
 Summary:    Makes working with XML feel like you are working with JSON
-Version:    0.12.0
+Version:    0.13.0
 Release:    0
 Group:      Applications
 License:    Apache-2.0
