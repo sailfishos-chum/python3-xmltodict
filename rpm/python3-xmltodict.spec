@@ -27,7 +27,7 @@ working with JSON
 
 %if "%{?vendor}" == "chum"
 PackageName: xmltodict
-Type: console-application
+PackagerName: nephros
 Categories:
  - Library
 Custom:
