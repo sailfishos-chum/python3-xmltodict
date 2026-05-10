@@ -17,7 +17,7 @@ BuildArch:  noarch
 URL:        https://pypi.org/project/xmltodict/
 Source0:    %{name}-%{version}.tar.gz
 Source100:  python3-xmltodict.yaml
-BuildRequires:  pkgconfig(python)
+BuildRequires:  pkgconfig(python3)
 BuildRequires:  python3-rpm-macros
 
 %description
@@ -25,15 +25,15 @@ BuildRequires:  python3-rpm-macros
 xmltodict is a Python module that makes working with XML feel like you are
 working with JSON
 
-%if "%{?vendor}" == "chum"
-PackageName: xmltodict
-PackagerName: nephros
+%if 0%{?_chum}
+Title: xmltodict
+PackagedBy: nephros
 Categories:
  - Library
 Custom:
   PackagingRepo: https://github.com/sailfishos-chum/python3-xmltodict
   Repo: https://github.com/martinblech/xmltodict
-Url:
+Links:
   Homepage: https://pypi.org/project/xmltodict/
 %endif
 
